@@ -1,0 +1,121 @@
+java.lang.RuntimeException: Exiting due to error in the template
+File: /Users/nickwhite/Google Drive/Current Classes/461L Software Design Lab/Team Project/Wingspan/play-example/.g8/form/form.iml, context [anonymous] 5:26 internal error: org.stringtemplate.v4.compiler.STException: context [anonymous] 5:26 attribute MODULE_DIR isn't defined
+	at giter8.G8$STErrorHandler.runTimeError(g8.scala:110)
+	at giter8.G8$STErrorHandler.runTimeError(g8.scala:105)
+	at org.stringtemplate.v4.misc.ErrorManager.runTimeError(ErrorManager.java:133)
+	at org.stringtemplate.v4.Interpreter._exec(Interpreter.java:193)
+	at org.stringtemplate.v4.Interpreter.exec(Interpreter.java:145)
+	at org.stringtemplate.v4.ST.write(ST.java:427)
+	at org.stringtemplate.v4.ST.render(ST.java:497)
+	at org.clapper.scalasti.ST.render(ST.scala:286)
+	at giter8.G8$.applyTemplate(g8.scala:102)
+	at giter8.G8$.write(g8.scala:154)
+	at giter8.G8$.write(g8.scala:138)
+	at giter8.G8$$anonfun$writeTemplates$2$$anonfun$apply$11.apply(g8.scala:396)
+	at giter8.G8$$anonfun$writeTemplates$2$$anonfun$apply$11.apply(g8.scala:396)
+	at scala.util.control.Exception$Catch$$anonfun$opt$1.apply(Exception.scala:118)
+	at scala.util.control.Exception$Catch$$anonfun$opt$1.apply(Exception.scala:118)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:102)
+	at scala.util.control.Exception$Catch.opt(Exception.scala:118)
+	at giter8.G8$$anonfun$writeTemplates$2.apply(g8.scala:395)
+	at giter8.G8$$anonfun$writeTemplates$2.apply(g8.scala:386)
+	at scala.collection.immutable.Stream.foreach(Stream.scala:547)
+	at giter8.G8$.writeTemplates(g8.scala:386)
+	at giter8.G8$$anonfun$applyT$1.apply(g8.scala:256)
+	at giter8.G8$$anonfun$applyT$1.apply(g8.scala:249)
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523)
+	at giter8.G8$.applyT(g8.scala:249)
+	at giter8.G8$.fromDirectoryRaw(g8.scala:69)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply$mcV$sp(ScafoldPlugin.scala:53)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply(ScafoldPlugin.scala:50)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply(ScafoldPlugin.scala:50)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+	at scala.sys.package$.error(package.scala:27)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1$$anonfun$apply$mcV$sp$1.apply(ScafoldPlugin.scala:54)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1$$anonfun$apply$mcV$sp$1.apply(ScafoldPlugin.scala:54)
+	at scala.util.Either.fold(Either.scala:97)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply$mcV$sp(ScafoldPlugin.scala:53)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply(ScafoldPlugin.scala:50)
+	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply(ScafoldPlugin.scala:50)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(*:[31mg8Scaffold[0m) Exiting due to error in the template[0m
+[0m[[31merror[0m] [0mFile: /Users/nickwhite/Google Drive/Current Classes/461L Software Design Lab/Team Project/Wingspan/play-example/.g8/form/form.iml, context [anonymous] 5:26 internal error: org.stringtemplate.v4.compiler.STException: context [anonymous] 5:26 attribute MODULE_DIR isn't defined[0m
+[0m[[31merror[0m] [0m	at giter8.G8$STErrorHandler.runTimeError(g8.scala:110)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$STErrorHandler.runTimeError(g8.scala:105)[0m
+[0m[[31merror[0m] [0m	at org.stringtemplate.v4.misc.ErrorManager.runTimeError(ErrorManager.java:133)[0m
+[0m[[31merror[0m] [0m	at org.stringtemplate.v4.Interpreter._exec(Interpreter.java:193)[0m
+[0m[[31merror[0m] [0m	at org.stringtemplate.v4.Interpreter.exec(Interpreter.java:145)[0m
+[0m[[31merror[0m] [0m	at org.stringtemplate.v4.ST.write(ST.java:427)[0m
+[0m[[31merror[0m] [0m	at org.stringtemplate.v4.ST.render(ST.java:497)[0m
+[0m[[31merror[0m] [0m	at org.clapper.scalasti.ST.render(ST.scala:286)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$.applyTemplate(g8.scala:102)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$.write(g8.scala:154)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$.write(g8.scala:138)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$$anonfun$writeTemplates$2$$anonfun$apply$11.apply(g8.scala:396)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$$anonfun$writeTemplates$2$$anonfun$apply$11.apply(g8.scala:396)[0m
+[0m[[31merror[0m] [0m	at scala.util.control.Exception$Catch$$anonfun$opt$1.apply(Exception.scala:118)[0m
+[0m[[31merror[0m] [0m	at scala.util.control.Exception$Catch$$anonfun$opt$1.apply(Exception.scala:118)[0m
+[0m[[31merror[0m] [0m	at scala.util.control.Exception$Catch.apply(Exception.scala:102)[0m
+[0m[[31merror[0m] [0m	at scala.util.control.Exception$Catch.opt(Exception.scala:118)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$$anonfun$writeTemplates$2.apply(g8.scala:395)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$$anonfun$writeTemplates$2.apply(g8.scala:386)[0m
+[0m[[31merror[0m] [0m	at scala.collection.immutable.Stream.foreach(Stream.scala:547)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$.writeTemplates(g8.scala:386)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$$anonfun$applyT$1.apply(g8.scala:256)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$$anonfun$applyT$1.apply(g8.scala:249)[0m
+[0m[[31merror[0m] [0m	at scala.util.Either$RightProjection.flatMap(Either.scala:523)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$.applyT(g8.scala:249)[0m
+[0m[[31merror[0m] [0m	at giter8.G8$.fromDirectoryRaw(g8.scala:69)[0m
+[0m[[31merror[0m] [0m	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply$mcV$sp(ScafoldPlugin.scala:53)[0m
+[0m[[31merror[0m] [0m	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply(ScafoldPlugin.scala:50)[0m
+[0m[[31merror[0m] [0m	at giter8.ScaffoldPlugin$$anonfun$5$$anonfun$apply$5$$anonfun$apply$1.apply(ScafoldPlugin.scala:50)[0m
+[0m[[31merror[0m] [0m	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)[0m
+[0m[[31merror[0m] [0m	at sbt.std.Transform$$anon$3$$anonfun$apply$2.apply(System.scala:44)[0m
+[0m[[31merror[0m] [0m	at sbt.std.Transform$$anon$4.work(System.scala:63)[0m
+[0m[[31merror[0m] [0m	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)[0m
+[0m[[31merror[0m] [0m	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)[0m
+[0m[[31merror[0m] [0m	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)[0m
+[0m[[31merror[0m] [0m	at sbt.Execute.work(Execute.scala:237)[0m
+[0m[[31merror[0m] [0m	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)[0m
+[0m[[31merror[0m] [0m	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)[0m
+[0m[[31merror[0m] [0m	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)[0m
+[0m[[31merror[0m] [0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)[0m
+[0m[[31merror[0m] [0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[31merror[0m] [0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[31merror[0m] [0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[31merror[0m] [0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m
+[0m[[31merror[0m] [0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m
+[0m[[31merror[0m] [0m	at java.lang.Thread.run(Thread.java:745)[0m

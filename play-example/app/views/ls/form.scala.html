@@ -1,0 +1,12 @@
+@(lsForm: Form[LsData])
+
+<h1>ls form</h1>
+
+@flash.getOrDefault("success", "")
+
+@helper.form(action = routes.LsController.lsPost()) {
+  @helper.CSRF.formField
+  @helper.inputText(lsForm("name"))
+  @helper.inputText(lsForm("age"))
+  <input type="submit" value="submit"/>
+}

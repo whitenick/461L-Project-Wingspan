@@ -52,9 +52,9 @@
                     <span><label for="q42" style="font-size:60%;">No</label></span>
       					</li>
               </ol><!-- /questions -->
-              <button class="submit" type="submit">Send answers</button>
+              <button class="submit" type="submit" name="submitButton">Send answers</button>
               <div class="controls">
-                <button class="next"></button>
+                <button class="next" name="next"></button>
                 <div class="progress"></div>
                 <span class="number">
                   <span class="number-current"></span>
@@ -75,6 +75,12 @@
         		onSubmit : function( form ) {
     				  // hide form
     				  classie.addClass( form.querySelector( '.simform-inner' ), 'hide' );
+              var formString = parseSubmission();
+
+              window.onbeforeunload = function() {
+                alert(formString);
+                sessionStorage.setItem('response', formString);
+              }
               parseSubmission();
               window.location = "results.html";
         		}

@@ -1,14 +1,14 @@
-#ScriptName : testForm.py
-#---------------------
+# ScriptName : testForm.py
+# ---------------------
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import os
 
-#Following are optional required
-
+# Following are optional required
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
+
 
 def run():
     baseurl = "https://wingspan-app.herokuapp.com/compute.html"
@@ -18,15 +18,15 @@ def run():
     timingPref = "early"
     withKids = "no"
 
-    xpaths = { 'flightNumber' : "//input[@name='q1']",
-           'startLocation' : "//input[@name='q2']",
-           'timingPref' :   "//input[@name='q3']",
-           'withKids' : "//input[@name='q4']",
-           'next' : "//button[@name='next']",
-           'submitButton' : "//button[@name='submitButton']"
-         }
+    xpaths = {'flightNumber': "//input[@name='q1']",
+              'startLocation': "//input[@name='q2']",
+              'timingPref': "//input[@name='q3']",
+              'withKids': "//input[@name='q4']",
+              'next': "//button[@name='next']",
+              'submitButton': "//button[@name='submitButton']"
+              }
 
-    os.environ['PATH'] = "/Users/nickwhite/Documents/"
+    os.environ['PATH'] = "/Users/nickwhite/Documents/Chrome"
     driver = webdriver.Chrome()
     driver.get(baseurl)
     driver.maximize_window()
